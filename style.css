@@ -1,0 +1,76 @@
+body {
+  margin: 0px;
+  background: radial-gradient(#CECECE, #fff);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80vh;
+  perspective: 980px;
+}
+
+.grid {
+  top: 20%;
+  border-top: 25px solid #ffffff77;
+	width: 110vw;
+	height: 100vh;
+	transform: rotateX(85deg);
+  position: absolute;
+	border-radius: 50%;
+}
+
+.basket {
+  width: 300px;
+  height: 400px;
+  top: 5%;
+  border-radius: 100% / 120% 120% 75% 75%;
+  background: linear-gradient(165deg, 
+  rgba(255, 255, 255, 1) 0%, 
+  rgb(220, 220, 220) 40%, 
+  rgb(170, 170, 170) 98%, 
+  rgb(10, 10, 10) 100%);
+  box-shadow: 
+  0 -10px 20px 20px #ffffff40 inset,
+  0 -5px 15px 10px #ffffff50 inset,
+  0 -2px 5px #ffffff80 inset,
+  0 -3px 2px #ffffffBB inset,
+  0 2px 0px #ffffff,
+  0 2px 3px #ffffff,
+  0 5px 5px #ffffff90,
+  0 10px 15px #ffffff60,
+  0 10px 20px 20px #ffffff40;
+  filter: blur(3px);
+  position: relative; 
+  animation: hover 2s linear infinite;
+}
+
+.egg {
+  width: 300px;
+  height: 400px;
+  border-bottom: 5px solid gold;
+  border-radius: 100%; 
+  filter: blur(3px); 
+}
+
+@keyframes hover {
+  0% {
+    transform: translate(0, 0px);
+  }
+  25% {
+    transform: translate(0, -5px);
+  }
+  50% {
+    transform: translate(0, -10px);
+  }
+  75% {
+    transform: translate(0, -5px);
+  }
+  100% {
+    transform: translate(0, 0px);
+  }
+}
+
+@keyframes rotate {
+  to {
+    transform: rotate(360deg);
+  }
+}
